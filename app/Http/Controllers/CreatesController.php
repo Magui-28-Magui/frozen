@@ -25,7 +25,7 @@ class CreatesController extends Controller
     	$articles->title = $request->input('title');
     	$articles->description = $request->input('description');
     	$articles->save();
-    	return redirect('inc.welcome')->with('info','Article Saved Successfully!');
+    	return redirect('/')->with('info','Article Saved Successfully!');
     } 
 
     public function update($id){
