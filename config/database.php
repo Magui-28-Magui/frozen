@@ -1,4 +1,8 @@
 <?php
+$host="ec2-107-21-125-209.compute-1.amazonaws.com";
+$username="bqblotchnrhedj";
+$password="ce80a6c021f62320434a0c784cc1b0209a864b4656cc1a171e37381906c634eb";
+$database="de5mrb406ma22l";
 
 return [
 
@@ -13,7 +17,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'pgsql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -54,18 +58,17 @@ return [
             'engine' => null,
         ],
 
-        'pgsql' => [
+        'pgsql' => array(
             'driver' => 'pgsql',
-            'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '5432'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'host' => $host,
+            'database' => $database,
+            'username' => $username,
+            'password' => $password,
             'charset' => 'utf8',
             'prefix' => '',
             'schema' => 'public',
-            'sslmode' => 'prefer',
-        ],
+        ),
+
 
         'sqlsrv' => [
             'driver' => 'sqlsrv',
