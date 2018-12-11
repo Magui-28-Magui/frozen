@@ -1,6 +1,6 @@
 <footer class="footer">
 	<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/footer.jpg" data-speed="0.8">
-		<img src="{{asset('images/footer.jpg')}}" style="width:auto;"></div>
+		<img src="{{asset('images/footer.jpg')}}" style="width:100%;"></div>
 	<div class="footer_content">
 		<div class="container">
 			<div class="row">
