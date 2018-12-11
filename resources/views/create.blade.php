@@ -14,33 +14,31 @@
 				    		</div>
 				    	@endforeach
 				    @endif
-				    <div class="form-group">
 						<div class="col-lg-4 info_box_col" id="registro">
 							<div class="info_form_title">Agenda tu cita aquí</div>
 							<div class="info_form_container">
-								<form action="#" class="info_form" id="info_form"  required="required">
+								<form action="{{ route('Article.add') }}" class="info_form" id="info_form">
 									<select name="info_form_dep" id="info_form_dep" class="info_form_dep info_input info_select">
 										<option>Cuidado Dental</option>
 										<option>Cirugía</option>
 										<option>Neurología</option>
 									</select>
-									<select name="info_form_doc" id="info_form_doc" class="info_form_doc info_input info_select"  required="required">
+									<select name="info_form_doc" id="info_form_doc" class="info_form_doc info_input info_select" >
 										<option>Doctor</option>
 										<option>Jefferson Gutierritos</option>
 										<option>Alvin Yakitori</option>
 									</select>
-									<input type="text" class="info_input" placeholder="Nombre" required="required">
-									<input type="text" class="info_input" placeholder="Correo" required="required">
-									<input type="date" class="info_input" placeholder="Fecha"  required="required">
-									<input type="text" class="info_input" placeholder="Razón"  required="required">
-									<input type="text" class="info_input" placeholder="Telefono"  required="required">
-									<select name="info_form_doc" id="info_form_doc" class="info_form_doc info_input info_select"  required="required">
+									<input type="text" class="info_input" placeholder="Nombre" >
+									<input type="text" class="info_input" placeholder="Correo" >
+									<input type="date" class="info_input" placeholder="Fecha"  >
+									<input type="text" class="info_input" placeholder="Razón"  >
+									<input type="text" class="info_input" placeholder="Telefono">
+									<select name="info_form_doc" id="info_form_doc" class="info_form_doc info_input info_select">
 										<option>Duración de la cita</option>
 										<option>30 minutos</option>
 										<option>1 Hora</option>
 									</select>
 								</form>
-							</div>
 				 	</div>
 
 				 	<div class="form-group">
