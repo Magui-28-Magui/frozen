@@ -5,7 +5,8 @@
 				<form class="form-horizontal" method="post" action="{{ url('/insert')}}">
 					{{csrf_field()}}
 				  <fieldset>
-				    <legend>Laravel CRUD Application</legend>
+					  <br>
+				    <legend>Agenda tu cita aquí</legend>
 				    @if(count($errors) >0 )
 				    	@foreach($errors->all() as $error)
 				    		<div class="alert alert-danger">
@@ -14,19 +15,32 @@
 				    	@endforeach
 				    @endif
 				    <div class="form-group">
-				      <label for="exampleInputEmail1" class="col-lg-2 control-label">Title</label>
-				      <div class="col-lg-10">
-				      	<input type="text" name="title" class="form-control" id="title" placeholder="Title">
-				      </div>
-				 	</div>
-				 	<div class="form-group">
-				      <label for="exampleInputEmail1" class="col-lg-2 control-label">Description</label>
-				      <div class="col-lg-10">
-				      	
-				      	<textarea name="description" class="form-control" placeholder="Description">
-				      		
-				      	</textarea>
-				      </div>
+						<div class="col-lg-4 info_box_col" id="registro">
+							<div class="info_form_title">Agenda tu cita aquí</div>
+							<div class="info_form_container">
+								<form action="#" class="info_form" id="info_form"  required="required">
+									<select name="info_form_dep" id="info_form_dep" class="info_form_dep info_input info_select">
+										<option>Cuidado Dental</option>
+										<option>Cirugía</option>
+										<option>Neurología</option>
+									</select>
+									<select name="info_form_doc" id="info_form_doc" class="info_form_doc info_input info_select"  required="required">
+										<option>Doctor</option>
+										<option>Jefferson Gutierritos</option>
+										<option>Alvin Yakitori</option>
+									</select>
+									<input type="text" class="info_input" placeholder="Nombre" required="required">
+									<input type="text" class="info_input" placeholder="Correo" required="required">
+									<input type="date" class="info_input" placeholder="Fecha"  required="required">
+									<input type="text" class="info_input" placeholder="Razón"  required="required">
+									<input type="text" class="info_input" placeholder="Telefono"  required="required">
+									<select name="info_form_doc" id="info_form_doc" class="info_form_doc info_input info_select"  required="required">
+										<option>Duración de la cita</option>
+										<option>30 minutos</option>
+										<option>1 Hora</option>
+									</select>
+								</form>
+							</div>
 				 	</div>
 
 				 	<div class="form-group">
