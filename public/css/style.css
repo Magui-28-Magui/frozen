@@ -3,13 +3,14 @@
 	padding: 10px;
 	color:  #fff;
 	background: #0c84e4;
-	bottom: 100% !important;
+	bottom: 0 !important;
+	position: fixed !important;
 }
 #footer p{
 	margin-bottom: 0px;
 }
 
 #navbarColor01{
-	align-content: flex-end !important;
+	float: right !important;
 	font-weight: bold;
 }
