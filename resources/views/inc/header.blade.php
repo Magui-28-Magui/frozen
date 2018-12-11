@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="{{ url('css/style.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{ url('css/font-awesome.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{ url('css/main_styles.css')}}">
+	<link href="{{asset('plugins/OwlCarousel2-2.2.1/animate.css')}}" rel="stylesheet"/>
 	<script type="text/javascript" src="{{url('js/jquery-3.3.1.js')}}"></script>
 	<script type="text/javascript" src="{{url('js/bootstrap.js')}}"></script>
 </head>
