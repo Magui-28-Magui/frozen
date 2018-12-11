@@ -1,7 +1,7 @@
  @include('inc.header')
 	<div class="container">
 		<div class="row">
-			<legend>Laravel CRUD Application</legend>
+			<legend><br>Solicitud de citas:</legend>
 			<div class="row">
 				<div class="col-md-30 col-lg-30">
 					@if(session('info'))
