@@ -31,15 +31,15 @@
 						@foreach($articles->all() as $article)
 						<tr>
 							<td>{{ $article->id }}</td>
-							<td>{{ $cita->nombre }}</td>
-							<td>{{ $cita->edad }}</td>
-							<td>{{ $cita->telefono }}</td>
-							<td>{{ $cita->razon }}</td>
-							<td>{{ $cita->email }}</td>
-							<td>{{ $cita->departamento }}</td>
-							<td>{{ $cita->fecha }}</td>
-							<td>{{ $cita->doctor }}</td>
-							<td>{{ $cita->tiempo }}</td>
+							<td>{{ $article->nombre }}</td>
+							<td>{{ $article->edad }}</td>
+							<td>{{ $article->telefono }}</td>
+							<td>{{ $article->razon }}</td>
+							<td>{{ $article->email }}</td>
+							<td>{{ $article->departamento }}</td>
+							<td>{{ $article->fecha }}</td>
+							<td>{{ $article->doctor }}</td>
+							<td>{{ $article->tiempo }}</td>
 							<td>
 								<a href='{{ url("/read/{$article->id}") }}' class="btn btn-primary">Read</a> |
 								<a href='{{ url("/update/{$article->id}") }}' class="btn btn-success">Update</a> |

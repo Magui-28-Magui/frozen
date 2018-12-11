@@ -55,15 +55,15 @@ class CreatesController extends Controller
 
     public function edit(Request $request, $id){
     	$this->validate($request,[
-            'nombre' => 'required',
-            'edad' => 'required',
-            'telefono' => 'required',
-            'razon' => 'required',
-            'email' => 'required',
-            'departamento' => 'required',
-            'fecha' => 'required',
-            'doctor' => 'required',
-            'tiempo' => 'required',
+            'nombre' => '',
+            'edad' => '',
+            'telefono' => '',
+            'razon' => '',
+            'email' => '',
+            'departamento' => '',
+            'fecha' => '',
+            'doctor' => '',
+            'tiempo' => '',
     	]);
     	$data = array(
     	    'nombre' => $request->input('nombre'),
