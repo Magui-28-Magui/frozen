@@ -17,13 +17,28 @@ class CreatesController extends Controller
 
     public function add(Request $request){
     	$this->validate($request,[
-    		'title' => 'required',
-    		'description' => 'required'
+            'nombre' => 'required',
+            'edad' => 'required',
+            'telefono' => 'required',
+            'razon' => 'required',
+            'email' => 'required',
+            'departamento' => 'required',
+            'fecha' => 'required',
+            'doctor' => 'required',
+            'tiempo' => 'required',
     	]);
 
     	$articles = new Article;
-    	$articles->title = $request->input('title');
-    	$articles->description = $request->input('description');
+    	$articles->nombre = $request->input('nombre');
+    	$articles->edad = $request->input('edad');
+    	$articles->telefono = $request->input('telefono');
+    	$articles->razon = $request->input('razon');
+    	$articles->email = $request->input('email');
+    	$articles->departamento = $request->input('departamento');
+    	$articles->fecha = $request->input('fecha');
+    	$articles->doctor = $request->input('doctor');
+    	$articles->tiempo = $request->input('tiempo');
+
     	$articles->save();
     	return redirect('/')->with('info','Article Saved Successfully!');
     } 
@@ -40,12 +55,26 @@ class CreatesController extends Controller
 
     public function edit(Request $request, $id){
     	$this->validate($request,[
-    		'title' => 'required',
-    		'description' => 'required'
+            'nombre' => 'required',
+            'edad' => 'required',
+            'telefono' => 'required',
+            'razon' => 'required',
+            'email' => 'required',
+            'departamento' => 'required',
+            'fecha' => 'required',
+            'doctor' => 'required',
+            'tiempo' => 'required',
     	]);
     	$data = array(
-			'title' => $request->input('title'),
-    		'description' => $request->input('description')
+            $articles->nombre = $request->input('nombre');
+        $articles->edad = $request->input('edad');
+        $articles->telefono = $request->input('telefono');
+        $articles->razon = $request->input('razon');
+        $articles->email = $request->input('email');
+        $articles->departamento = $request->input('departamento');
+        $articles->fecha = $request->input('fecha');
+        $articles->doctor = $request->input('doctor');
+        $articles->tiempo = $request->input('tiempo');
     	);
     	Article::where('id',$id)
     	->update($data);
