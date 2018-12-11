@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
-				<form class="form-horizontal" method="post" action="{{ url('/insert')}}">
+				<form class="form-horizontal" method="post" action="{{ url('/add')}}">
 					{{csrf_field()}}
 				  <fieldset>
 				    <legend>Laravel CRUD Application</legend>

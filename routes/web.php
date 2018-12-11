@@ -15,7 +15,7 @@ Route::get('/create', function(){
 	return view('create');
 });
 
-Route::post('/insert','CreatesController@add');
+Route::post('/add','CreatesController@add');
 Route::get('/update/{id}','CreatesController@update');
 Route::post('/edit/{id}','CreatesController@edit');
 Route::get('/read/{id}','CreatesController@read');
