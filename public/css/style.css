@@ -3,7 +3,13 @@
 	padding: 10px;
 	color:  #fff;
 	background: #0c84e4;
+	bottom: 100% !important;
 }
 #footer p{
 	margin-bottom: 0px;
+}
+
+#navbarColor01{
+	align-content: flex-end !important;
+	font-weight: bold;
 }

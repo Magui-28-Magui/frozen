@@ -14,7 +14,7 @@
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
 
-	  <div class="collapse navbar-collapse justify-content-end" id="navbarColor01">
+	  <div class="collapse navbar-collapse" id="navbarColor01">
 	    <ul class="navbar-nav mr-auto">
 	      <li class="nav-item active">
 	        <a class="nav-link" href="{{ url('/')}}">Home <span class="sr-only">(current)</span></a>
@@ -23,7 +23,7 @@
 	        <a class="nav-link" href="{{ url('/create')}}">Create</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="{{ url('/create')}}">Register</a>
+	        <a class="nav-link" href="{{ url('/register')}}">Register</a>
 	      </li>
 
 	    </ul>
