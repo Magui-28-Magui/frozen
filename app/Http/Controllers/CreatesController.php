@@ -17,15 +17,15 @@ class CreatesController extends Controller
 
     public function add(Request $request){
     	$this->validate($request,[
-            'nombre' => '',
-            'edad' => '',
-            'telefono' => '',
-            'razon' => '',
-            'email' => '',
-            'departamento' => '',
-            'fecha' => '',
-            'doctor' => '',
-            'tiempo' => '',
+            'nombre' => 'required',
+            'edad' => 'required',
+            'telefono' => 'required',
+            'razon' => 'required',
+            'email' => 'required',
+            'departamento' => 'required',
+            'fecha' => 'required',
+            'doctor' => 'required',
+            'tiempo' => 'required',
     	]);
 
     	$articles = new Article;
@@ -34,13 +34,13 @@ class CreatesController extends Controller
     	$articles->telefono = $request->input('telefono');
     	$articles->razon = $request->input('razon');
     	$articles->email = $request->input('email');
-    	$articles->departamento = $request->input('');
+    	$articles->departamento = $request->input('departamento');
     	$articles->fecha = $request->input('fecha');
-    	$articles->doctor = $request->input('');
-    	$articles->tiempo = $request->input('');
+    	$articles->doctor = $request->input('doctor');
+    	$articles->tiempo = $request->input('tiempo');
 
     	$articles->save();
-    	return redirect('/')->with('info','Article Saved Successfully!');
+    	return redirect('/home')->with('info','Article Saved Successfully!');
     } 
 
     public function update($id){
