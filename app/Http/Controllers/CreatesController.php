@@ -22,9 +22,9 @@ class CreatesController extends Controller
             'telefono' => 'required',
             'razon' => 'required',
             'email' => 'required',
-            'departamento' => 'required',
+            'departamento' => '',
             'fecha' => 'required',
-            'doctor' => 'required',
+            'doctor' => '',
             'tiempo' => 'required',
     	]);
 

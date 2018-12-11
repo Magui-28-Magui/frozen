@@ -24,11 +24,11 @@
 										<option>Jefferson Gutierritos</option>
 										<option>Alvin Yakitori</option>
 									</select>
-									<input type="text" class="info_input" placeholder="Nombre" >
-									<input type="text" class="info_input" placeholder="Correo" >
-									<input type="date" class="info_input" placeholder="Fecha"  >
-									<input type="text" class="info_input" placeholder="Razón"  >
-									<input type="text" class="info_input" placeholder="Telefono">
+									<input type="text" class="info_input" placeholder="Nombre" name="nombre" >
+									<input type="text" class="info_input" placeholder="Correo" name="correo">
+									<input type="date" class="info_input" placeholder="Fecha"  name="fecha" >
+									<input type="text" class="info_input" placeholder="Razón" name="razon" >
+									<input type="text" class="info_input" placeholder="Telefono" name="telefono">
 									<select name="info_form_doc" id="info_form_doc" class="info_form_doc info_input info_select">
 										<option>Duración de la cita</option>
 										<option>30 minutos</option>
