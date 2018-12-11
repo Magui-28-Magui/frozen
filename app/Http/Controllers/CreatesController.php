@@ -66,6 +66,7 @@ class CreatesController extends Controller
             'tiempo' => 'required',
     	]);
     	$data = array(
+            $articles = new Article;
             $articles->nombre = $request->input('nombre'),
         $articles->edad = $request->input('edad'),
         $articles->telefono = $request->input('telefono'),
