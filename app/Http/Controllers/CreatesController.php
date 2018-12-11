@@ -66,15 +66,15 @@ class CreatesController extends Controller
             'tiempo' => 'required',
     	]);
     	$data = array(
-            $articles->nombre = $request->input('nombre');
-        $articles->edad = $request->input('edad');
-        $articles->telefono = $request->input('telefono');
-        $articles->razon = $request->input('razon');
-        $articles->email = $request->input('email');
-        $articles->departamento = $request->input('departamento');
-        $articles->fecha = $request->input('fecha');
-        $articles->doctor = $request->input('doctor');
-        $articles->tiempo = $request->input('tiempo');
+            $articles->nombre = $request->input('nombre'),
+        $articles->edad = $request->input('edad'),
+        $articles->telefono = $request->input('telefono'),
+        $articles->razon = $request->input('razon'),
+        $articles->email = $request->input('email'),
+        $articles->departamento = $request->input('departamento'),
+        $articles->fecha = $request->input('fecha'),
+        $articles->doctor = $request->input('doctor'),
+        $articles->tiempo = $request->input('tiempo')
     	);
     	Article::where('id',$id)
     	->update($data);
