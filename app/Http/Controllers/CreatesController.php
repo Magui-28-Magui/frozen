@@ -34,10 +34,10 @@ class CreatesController extends Controller
     	$articles->telefono = $request->input('telefono');
     	$articles->razon = $request->input('razon');
     	$articles->email = $request->input('email');
-    	$articles->departamento = $request->input('departamento');
+    	$articles->departamento = $request->input('');
     	$articles->fecha = $request->input('fecha');
-    	$articles->doctor = $request->input('doctor');
-    	$articles->tiempo = $request->input('tiempo');
+    	$articles->doctor = $request->input('');
+    	$articles->tiempo = $request->input('');
 
     	$articles->save();
     	return redirect('/')->with('info','Article Saved Successfully!');
