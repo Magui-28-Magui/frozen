@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Laravel Homepage</title>
+	<title>Hospital Matasanos</title>
 	<link rel="stylesheet" type="text/css" href="{{ url('css/bootstrap.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{ url('css/style.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{ url('css/font-awesome.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{ url('css/main_styles.css')}}">
 	<script type="text/javascript" src="{{url('js/jquery-3.3.1.js')}}"></script>
 	<script type="text/javascript" src="{{url('js/bootstrap.js')}}"></script>
-</head>	<div class="menu trans_500">
+</head>
+<body>
+<div class="menu trans_500">
 	<div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
 		<div class="menu_close_container"><div class="menu_close"></div></div>
 		<form action="#" class="menu_search_form">
