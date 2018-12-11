@@ -17,15 +17,15 @@ class CreatesController extends Controller
 
     public function add(Request $request){
     	$this->validate($request,[
-            'nombre' => 'required',
-            'edad' => 'required',
-            'telefono' => 'required',
-            'razon' => 'required',
-            'email' => 'required',
-            'departamento' => 'required',
-            'fecha' => 'required',
-            'doctor' => 'required',
-            'tiempo' => 'required',
+            'nombre' => '',
+            'edad' => '',
+            'telefono' => '',
+            'razon' => '',
+            'email' => '',
+            'departamento' => '',
+            'fecha' => '',
+            'doctor' => '',
+            'tiempo' => '',
     	]);
 
     	$articles = new Article;
