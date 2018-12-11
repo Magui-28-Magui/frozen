@@ -17,7 +17,7 @@
 						<div class="col-lg-4 info_box_col" id="registro">
 							<div class="info_form_title">Agenda tu cita aquí</div>
 							<div class="info_form_container">
-								<form action="{{ route('Article.add') }}" class="info_form" id="info_form">
+								<form action="#" class="info_form" id="info_form">
 									<select name="info_form_dep" id="info_form_dep" class="info_form_dep info_input info_select">
 										<option>Cuidado Dental</option>
 										<option>Cirugía</option>
