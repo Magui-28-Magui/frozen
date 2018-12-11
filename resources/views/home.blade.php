@@ -14,10 +14,16 @@
 			<table class="table table-striped table-hover">
 				<thead>
 					<tr>
-						<th>ID</th>
-						<th>Title</th>
-						<th>Desciption</th>
-						<th>Action</th>
+						<th>Nombre</th>
+						<th>Edad</th>
+						<th>Telefono</th>
+						<th>Razón</th>
+						<th>Correo</th>
+						<th>Departamento</th>
+						<th>Fecha</th>
+						<th>Doctor</th>
+						<th>Duración de cita</th>
+						<th width="280px">Action</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -25,8 +31,15 @@
 						@foreach($articles->all() as $article)
 						<tr>
 							<td>{{ $article->id }}</td>
-							<td>{{ $article->title }}</td>
-							<td>{{ $article->description }}</td>
+							<td>{{ $cita->nombre }}</td>
+							<td>{{ $cita->edad }}</td>
+							<td>{{ $cita->telefono }}</td>
+							<td>{{ $cita->razon }}</td>
+							<td>{{ $cita->email }}</td>
+							<td>{{ $cita->departamento }}</td>
+							<td>{{ $cita->fecha }}</td>
+							<td>{{ $cita->doctor }}</td>
+							<td>{{ $cita->tiempo }}</td>
 							<td>
 								<a href='{{ url("/read/{$article->id}") }}' class="btn btn-primary">Read</a> |
 								<a href='{{ url("/update/{$article->id}") }}' class="btn btn-success">Update</a> |
